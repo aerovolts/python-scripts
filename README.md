@@ -17,3 +17,9 @@ The default posting time is set to one hour, this can be changed on line 30. Tim
 This script uses a spreadsheet of pre-selected quotes on Google Drive to post to twitter. The quotes are randomly selected and then sent to Twitter via ttweepy and the Twitter API.
 
 This is probably broken however, I haven't used it in a long time.
+
+## redditscrape.py
+
+Downloads images from a list of user indicated subreddits up to a limit also defined by the user. These settings are located under the "Configuration" comment.
+
+Currently broken, see issues page for details.
