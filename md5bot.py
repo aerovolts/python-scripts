@@ -14,10 +14,10 @@ import hashlib
 import tweepy
 
 # Configuration (Twitter API Settings)
-CONSUMER_KEY = 'npfl47weJ6vSn3MRXUq342dMB'
-CONSUMER_SECRET = 'dKv6zrr7ExIWAtVE3gWG4xZFs3LziZaeHvmycTHkttGC3etP4d'
-ACCESS_TOKEN = '2489159084-t6A6zXVZSJFdZYP8jb78Mat8Lg3TfnIdffBgUTs'
-ACCESS_SECRET = '0C83TOgZ4WE00zWuDxVT2TS6E5sVo0Bp0P1IpRn2ipNhD'
+CONSUMER_KEY = 'xxxxxxxxxxxxxxxxxxxx'
+CONSUMER_SECRET = 'xxxxxxxxxxxxxxxxxxxx'
+ACCESS_TOKEN = 'xxxxxxxxxxxxxxxxxxxx'
+ACCESS_SECRET = 'xxxxxxxxxxxxxxxxxxxx'
 sleep_time = 3600 # Time is in seconds (Default 3600)
 
 # Do not edit beyond this comment

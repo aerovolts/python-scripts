@@ -10,7 +10,9 @@ Unless otherwise noted, scripts are written in Python 3.
 
 Generates an md5 hash of the current time and posts to Twitter using the tweepy library and Twitter API.
 
-The default posting time is set to one hour, this can be changed on line 30. Time should be input in seconds.
+To use this script install the tweepy library using `pip install tweepy`. Go to the Twitter developer site and register a new application. Add the consumer key/secret and access token/secret from your application into the script.
+
+The script runs in an infinite loop to post, there are better ways to do this (like a cron job) but I haven't learned those yet.
 
 ## twitterqtr.py
 
