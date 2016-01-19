@@ -6,6 +6,8 @@ Unless otherwise noted, scripts are written in Python 3.
 
 # Scripts
 
+Explanations for each script inside this repository are listed under each sub-heading.
+
 ## md5bot.py
 
 Generates an md5 hash of the current time and posts to Twitter using the tweepy library and Twitter API.
