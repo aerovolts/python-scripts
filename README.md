@@ -30,3 +30,9 @@ Two Python packages are requiered to run this script (`praw` and `wget`). They c
 
 * `pip install praw`
 * `pip install wget`
+
+To-Do List:
+
+* [ ] Clean-up .tmp files from broken downloads
+* [ ] Check if image already exists to prevent duplicate downloads
+* [ ] Fix download of non-direct image likes (ie. imgur galleries)
