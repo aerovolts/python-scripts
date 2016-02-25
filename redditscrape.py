@@ -3,22 +3,19 @@
 __author__ = "Patrick Guelcher"
 __copyright__ = "(C) 2016 Patrick Guelcher"
 __license__ = "MIT"
-__version__ = "2.1"
+__version__ = "3.0"
 
 """
 Scrapes the list of provided subreddits for images and downloads them to a local directory
 """
 
-import os
-import praw
-import wget
-import urllib.error
+import os, praw, wget, urllib.error
 
 # Configuration
 root_path = 'scrape' # Download folder (Default: scrape)
 sub_list = ['vexillology', 'mapporn', 'pics'] # Subreddit list
-post_limit = 50 # Sumbission limit to check and download
-user_agent = 'Image Scraper 2.1 by /u/aeroblitz' # Use your own reddit username
+post_limit = 15 # Sumbission limit to check and download
+user_agent = 'Image Scraper 3.0 by /u/aeroblitz' # Use your own reddit username
 
 # Do not edit beyond this comment
 def main():
@@ -41,8 +38,12 @@ def download_images():
                 file_name = post.url
                 extension = post.url[-4:]
                 if extension == '.jpg' or extension == '.png':
-                    print (post.url)
-                    wget.download(post.url, path)
+                    print ("\n" + post.url)
+                    try:
+                        wget.download(post.url, path)
+                    except (IndexError, urllib.error.HTTPError):
+                        print ("\n" + "Error Downloading -- Skipping Image")
+                        pass
                 else:
                     pass
             else:
@@ -50,7 +51,7 @@ def download_images():
         else:
             continue
     else:
-        print("Scrape Completed.")
+        print("\n" + "\n" + "Scrape Completed." + "\n")
 
 if __name__ == '__main__':
     main()
