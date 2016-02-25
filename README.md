@@ -24,6 +24,9 @@ This is probably broken however, I haven't used it in a long time.
 
 ## redditscrape.py
 
-Downloads images from a list of user indicated subreddits up to a limit also defined by the user. These settings are located under the "Configuration" comment.
+A script for downloading images from a list of user-defined subreddits up to a user-defined limit. Configuration can be found in the Configuration block near the top of the file.
 
-Currently broken, see issues page for details.
+Two Python packages are requiered to run this script (`praw` and `wget`). They can be installed via pip with the following commands:
+
+* `pip install praw`
+* `pip install wget`
