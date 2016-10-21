@@ -1,13 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
+
+"""Scrapes the list of provided subreddits for images and downloads them to a local directory"""
 
 __author__ = "Patrick Guelcher"
 __copyright__ = "(C) 2016 Patrick Guelcher"
 __license__ = "MIT"
-__version__ = "3.1"
-
-"""
-Scrapes the list of provided subreddits for images and downloads them to a local directory
-"""
+__version__ = "3.2"
 
 import os, praw, wget, urllib.error
 

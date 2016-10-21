@@ -1,12 +1,12 @@
 # Python-Scripts
 
-This is a central repository for miscellaneous python scripts I have written, and will write, over time that don't merit their own repository.
+This is a central repository for miscellaneous python scripts I have written, and will write, over time that don't merit their own repository. Explanations for each script inside this repository are listed below.
 
-Unless otherwise noted, scripts are written in Python 3.
+These scripts are all written and tested in Python 3 (as reflected by the shebang line at the top of each file).
 
-# Scripts
+## degrees_converter.py
 
-Explanations for each script inside this repository are listed under each sub-heading.
+This simple script automates the conversion of Decimal Degrees and Degrees Minutes Seconds. Prompts are
 
 ## md5bot.py
 
