@@ -6,7 +6,7 @@ These scripts are all written and tested in Python 3 (as reflected by the sheban
 
 ## degrees_converter.py
 
-This simple script automates the conversion of Decimal Degrees and Degrees Minutes Seconds. Prompts are
+This simple script automates the conversion of Decimal Degrees and Degrees Minutes Seconds. To use it just follow the prompts in the terminal window. Text entries are case insensitive, but numerical entries must follow the displayed formats.
 
 ## md5bot.py
 
