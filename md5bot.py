@@ -1,13 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
+
+"""A bot for Twitter that checks the time and then posts it as an md5 hash value."""
 
 __author__ = "Patrick Guelcher"
 __copyright__ = "(C) 2016 Patrick Guelcher"
 __license__ = "MIT"
-__version__ = "1.0"
-
-"""
-A bot for Twitter that checks the time and then posts it as an md5 hash value.
-"""
+__version__ = "1.1"
 
 import time
 import hashlib

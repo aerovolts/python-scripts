@@ -1,13 +1,18 @@
-"""
-twitterqtr.py -- A Twitter bot that takes quotes input into Google Drive and posts them to Twitter.
-"""
+#!/usr/bin/env python3
+
+"""A Twitter bot that takes quotes input into Google Drive and posts them to Twitter."""
+
+__author__ = "Patrick Guelcher"
+__copyright__ = "(C) 2016 Patrick Guelcher"
+__license__ = "MIT"
+__version__ = "1.1"
 
 import tweepy
 import gspread
 
 #Twitter API Settings
 CONSUMER_KEY = 'xxxxxxxxxxxx'
-CONSUMER_SECRET = 'xxxxxxxxxxxx' 
+CONSUMER_SECRET = 'xxxxxxxxxxxx'
 ACCESS_KEY = 'xxxxxxxxxxxx'
 ACCESS_SECRET = 'xxxxxxxxxxxx'
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
@@ -20,10 +25,10 @@ gc = gspread.login('username@gmail.com', 'password')
 #Quote Fetcher
 def fetchQuote():
 	wks = gc.open("Spreadsheet Name").sheet1
-	
+
 	quotes_list = filter(None, (wks.col_values(3))) #Filter empty lines
 	quotes_list.pop(0) #Remove column heading
-	
+
 	qn = 1
 	for q in quotes_list:
 		api.update_status(q)
