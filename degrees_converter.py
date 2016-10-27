@@ -17,7 +17,7 @@ def main():
 
         decimal = "0." + str(dd[1]) #Convert the second number back into a decimal number
         d = int(dd[0])
-        m = int((float(user_entry) - de) * 60)
+        m = int((float(user_entry) - d) * 60)
         s = round((float(user_entry) - d - (int(m)/60)) * 3600, 2)
 
         print("The Degrees Minutes Seconds are: " + str(d) + "° " + str(abs(m)) + "' " + str(abs(s)) + "\"")
