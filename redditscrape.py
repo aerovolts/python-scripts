@@ -7,7 +7,11 @@ __copyright__ = "(C) 2016 Patrick Guelcher"
 __license__ = "MIT"
 __version__ = "4.0"
 
-import json, os, requests, urllib.error, wget
+import json
+import os
+import requests
+import urllib.error
+import wget
 
 # Configuration
 root_path = 'scrape' # Download folder (Default: scrape)
