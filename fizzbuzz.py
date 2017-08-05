@@ -3,8 +3,8 @@
 # For numbers which are multiples of both three and five print “FizzBuzz”
 
 for n in range(1, 101):
-    x = 3 # To quickly change that number shows 'Fizz'
-    y = 5 # To quickly change that number shows 'Buzz'
+    x = 3 # To quickly change what multiples show 'Fizz'
+    y = 5 # To quickly change what multiples show 'Buzz'
     if n % x == 0 and n % y == 0:
         print("FizzBuzz")
     elif n % x == 0:
