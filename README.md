@@ -8,6 +8,10 @@ These scripts are all written and tested in Python 3 (as reflected by the sheban
 
 This simple script automates the conversion of Decimal Degrees and Degrees Minutes Seconds. To use it just follow the prompts in the terminal window. Text entries are case insensitive, but numerical entries must follow the displayed formats.
 
+## fizzbuzz.py
+
+My solution to the common FizzBuzz question.
+
 ## md5bot.py
 
 Generates an md5 hash of the current time and posts to Twitter using the tweepy library and Twitter API.
@@ -18,7 +22,7 @@ The script runs in an infinite loop to post, there are better ways to do this (l
 
 ## twitterqtr.py
 
-This script uses a spreadsheet of pre-selected quotes on Google Drive to post to twitter. The quotes are randomly selected and then sent to Twitter via ttweepy and the Twitter API.
+This script uses a spreadsheet of pre-selected quotes on Google Drive to post to twitter. The quotes are randomly selected and then sent to Twitter via tweepy and the Twitter API.
 
 This is probably broken however, I haven't used it in a long time.
 
